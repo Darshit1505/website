@@ -3,81 +3,341 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hypothetical Custom Bass Specifications</title>
+    <title>Totally Unique Custom Build: The "Paradox 9" Bass</title>
     <style>
         body {
-            font-family: sans-serif;
-            line-height: 1.6;
-            margin: 2em;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            background-color: #fff;
-            padding: 2em;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 1em;
-        }
-        h2 {
-            color: #34495e;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 0.3em;
-            margin-top: 1.5em;
-        }
-        ul {
-            list-style: none; /* Removes default bullets */
+            font-family: Arial, sans-serif;
+            margin: 0;
             padding: 0;
+            background-color: #f4f4f4; /* Light gray background for the page */
+            color: #333;
+            line-height: 1.6;
         }
-        li {
-            background-color: #ecf0f1;
-            margin-bottom: 0.8em;
-            padding: 0.8em 1.2em;
-            border-radius: 4px;
-            border-left: 5px solid #3498db; /* Accent color */
+        .header-bar {
+            background-color: #2a4d2a; /* Dark green from image */
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
         }
-        li strong {
-            color: #2980b9; /* Slightly darker accent for emphasis */
+        .: #888;
+            font-size: 0.9em;
+            margin: 20px auto; /* Center the placeholder */
+        }
+        .caption {
+            text-align: center;
+            font-style: italic;
+            color: #777;
+            font-size: 0.9em;
+            margin-top: -10px; /* Pull caption closer to image */
+            margin-bottom: 25px;
+        }
+        .description p {
+            margin-bottom: 15px;
         }
         .note {
-            margin-top: 2em;
-            font-style: italic;
-            color: #7f8c8d;
-            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 10px;
         }
+        .specifications-table {
+            width: 100%;
+            border-collapse: collapse; /* Removes double borders */
+            margin-top: 15px;
+        }
+        .specifications-table th,
+        .specifications-table td {header-bar h1 {
+            margin: 0;
+            font-size: 1.8em;
+            font-weight: normal;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff; /* White background for content area */
+            padding: 25px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .image-placeholder {
+            background-color: #e0e0e0; /* Light gray for placeholder */
+            width: 60%; /* Adjust width as needed */
+            min-height: 250px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            border: 1px solid #ccc;
+        }
+        .caption {
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+            font-style: italic;
+            margin-top: -10px; /* Adjust spacing */
+            margin-bottom: 30px;
+        }
+        h2 {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .description p {
+            margin-bottom: 10px;
+        }
+        .description .note {
+            font-size: 0.9em;
+            font-style: italic;
+            color: #444;
+            margin-top: 15px;
+        }
+        .specifications-section {
+            background-color: #f9f9f9; /* Slightly off-white for specs background */
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+        .specifications-section h2 {
+            margin-top: 0; /* Reset margin for heading inside section */
+            border: none;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .spec-table {
+            width: 100%;
+            border-collapse: collapse; /* Removes gaps between cells */
+        }
+        .spec-table td {
+            padding: 8px 5px;
+            border-bottom: 1px solid #eee; /* Light lines between rows */
+            vertical-align: top;
+        }
+        .spec-table td:first-child {
+            font-weight: bold;
+            width: 180px; /* Fixed width for labels */
+            color: #444;
+        }
+        .price-section {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #2a7d2a; /* Green color for price text */
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 1
+            border-bottom: 1px solid #eee; /* Light border between rows */
+            padding: 8px 5px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .specifications-table th {
+            font-weight: bold;
+            width: 180px; /* Fixed width for the label column */
+            color: #444;
+        }
+        .price-info {
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #2a7f4a; /* Green color for price */
+            margin-top: 35px;
+            margin-bottom: 20px;
+        }
+        .inquire-button {
+            display: block; /* Make it a block to center */
+            width: fit-content; /* Size button to content */
+            margin: 0 auto; /* Center the button */
+            padding: 12px 25px;
+            background-color: #007bff; /* Blue button */
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.2s ease;
+        }
+        .inquire-button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        /* Style potential bolding from description */
+        .description strong, .description b {
+            font-weight: bold;
+            color: #222; /* Slightly darker */
+        }
+
     </style>
 </head>
 <body>
+
+    <div class="header-bar"></div>
+
     <div class="container">
-        <h1>Unique Custom Bass Guitar Concept</h1>
+        <h1>Totally Unique Custom Build: The "Paradox 9" Bass</h1>
 
-        <h2>Core Specifications:</h2>
-        <ul>
-            <li><strong>String Count:</strong> 9-Strings Bass</li>
-            <li><strong>Scale Type:</strong> Multiscale (Fanned Fret)</li>
-            <li><strong>Fret Count:</strong> 19 Frets</li>
-            <li><strong>Scale Length Class:</strong> Ultra Short Scale</li>
-        </ul>
+        <div class="image-placeholder">
+            Custom 9-String Bass Image Here
+        </div>
+        <p class="caption">(Conceptual Image - Actual instrument may vary)</p>
 
-        <h2>Electronics & Hardware:</h2>
-        <ul>
-            <li><strong>Pickups:</strong> 3 Single Coil Pickups (SSS Configuration)</li>
-            <li><strong>Electronics:</strong> Active Electronics System</li>
-        </ul>
+        <div class="description">
+            <h2>Description</h2>
+            <p>
+                Whoa, man! Check out this one-of-a-kind experimental machine! This ain't your standard bass. Built for sonic
+                exploration, this custom "Paradox 9" pushes the boundaries with **9 strings** packed onto an **ultra-short
+                multiscale** neck. The unique 19-fret Palisander board keeps things somewhat manageable while the active
+                electronics and triple single-coil setup provide a surprisingly articulate (and wild!) tonal palette. Finished in a
+                head-turning **pink and blue** two-tone. This is likely a custom order piece, perfect for the adventurous player
+                looking for something truly different.
+            </p>
+            <p class="note">
+                <strong>Note:</strong> Due to the extreme specifications, this instrument requires specific string gauges and setup knowledge. Sold as-is.
+            </p>
+        </div>
 
-        <h2>Aesthetics & Materials:</h2>
-        <ul>
-            <li><strong>Body Color:</strong> Custom 2-Colour Finish (Pink and Blue)</li>
-            <li><strong>Fretboard Material:</strong> Palisander (Rosewood)</li>
-        </ul>
+        <div class="specifications">
+            <h2>Specifications</h2>
+            <table class="specifications-table">
+                <tbody>
+                    <tr>
+                        <th>Instrument:</th>
+                        <td>9-String Bass Guitar</td>
+                    </tr>
+                    <tr>
+                        <th>Condition:</th>
+                        <td>Custom / Prototype / Used</td>
+                    </tr>
+                    <tr>
+                        <th>Scale Type:</th>
+                        <td>Multiscale (Fanned Fret)</td>
+                    </tr>
+                    <tr>
+                        <th>Scale Length:</th>
+                        <td>Ultra Short Scale (Approx. 28" Low - 26" High)</td> <!-- Adjusted based on typical ultra-short multiscale ideas -->
+                    </tr>
+                    <tr>
+                        <th>Number of Frets:</th>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <th>Fretboard Material:</th>
+                        <td>Palisander (Rosewood)</td>
+                    </tr>
+                    <tr>
+                        <th>Pickups:</th>
+                        <td>3 x Custom Wound Single Coil Pickups (SSS Configuration)</td>
+                    </tr>
+                    <tr>
+                        <th>Electronics:</th>
+                        <td>Active Preamp System (Likely 3-Band EQ + Volume/Blend)</td>
+                    </tr>
+                    <tr>
+                        <th>Body Finish:</th>
+                        <td>Custom Two-Tone Gloss</td>
+                    </tr>
+                    <tr>
+                        <th>Body Colors:</th>
+                        <td>Pink and Blue (Specific pattern may vary - e.g., split, burst)</td>
+                    </tr>
+                    <tr>
+                        <th>Body Wood:</th>0px;
+        }
+        .inquire-button {
+            display: inline-block;
+            background-color: #007bff; /* Blue button color */
+            color: #fff;
+            padding: 12px 25px;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .inquire-button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
 
-        <p class="note">
-            Please note: This page describes a hypothetical instrument concept with highly unusual and potentially conflicting specifications. Finding or commissioning such an instrument would be extremely challenging.
-        </p>
+    </style>
+</head>
+<body>
+
+    <div class="header-bar">
+        <h1>Totally Unique Custom Build: The "Paradox 9" Bass</h1>
     </div>
+
+    <div class="container">
+
+        <div class="image-placeholder">
+            Custom 9-String Bass Image Here
+        </div>
+        <p class="caption">(Conceptual Image - Actual instrument may vary)</p>
+
+        <div class="description">
+            <h2>Description</h2>
+            <p>
+                Whoa, man! Check out this one-of-a-kind experimental machine! This ain't your standard bass. Built for sonic
+                exploration, this custom "Paradox 9" pushes the boundaries with **9 strings** packed onto an **ultra-short
+                multiscale** neck. The unique 19-fret Palisander board keeps things somewhat manageable while the active
+                electronics and triple single-coil setup provide a surprisingly articulate (and wild!) tonal palette. Finished in a
+                head-turning **pink and blue** two-tone. This is likely a custom order piece, perfect for the adventurous player
+                looking for something truly different.
+            </p>
+            <p class="note">
+                <strong>Note:</strong> Due to the extreme specifications, this instrument requires specific string gauges and setup knowledge. Sold as-is.
+            </p>
+        </div>
+
+        <div class="specifications-section">
+            <h2>Specifications</h2>
+            <table class="spec-table">
+                <tr>
+                    <td>Instrument:</td>
+                    <td>9-String Bass Guitar</td>
+                </tr>
+                <tr>
+                    <td>Condition:</td>
+                    <td>Custom / Prototype / Used</td>
+                </tr>
+                <tr>
+                    <td>Scale Type:</td>
+                    <td>Multiscale (Fanned Fret)</td>
+                </tr>
+                <tr>
+                    <td>Scale Length:</td>
+                    <td>Ultra Short Scale (Approx. 28" Low - 26" High
+                        <td>(Not specified, assumed Alder/Ash or similar)</td>
+                    </tr>
+                    <tr>
+                        <th>Neck Wood:</th>
+                        <td>(Not specified, assumed Maple)</td>
+                    </tr>
+                    <tr>
+                        <th>Hardware Color:</th>
+                        <td>(Not specified, assumed Chrome/Nickel)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="price-info">
+            Price: $ Contact for Details / Custom Order Quote
+        </div>
+
+        <a href="#" class="inquire-button">Inquire About This Bass</a>
+        <!-- Use "#" for the link if you don't have a specific URL -->
+
+    </div>
+
 </body>
 </html>
